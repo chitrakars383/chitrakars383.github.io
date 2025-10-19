@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Alex Morgan - Web Designer</title>
-    <link href="style.css" rel="stylesheet">
+    <title>About Me | Suman Chitrakar</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
-            <div class="logo">Alex<span>Morgan</span></div>
-            <nav>
+            <div class="logo"><a href="index.html"><img src="img/suman-chitrakar-logo.svg"></a></div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html" class="btn">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb" id="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <div class="breadcrumb-links">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">About Me</span>
+                </div>
+            </div>
+        </div>
+    </section>        
     </header>
 
-    <section class="about-detail">
+
+
+    <section class="hero" style="padding: 120px 0 80px;">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
+            <h1>About Me</h1>
+            <p>Learn more about my journey, skills, and approach to web design</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h3>My Journey as a Web Designer</h3>
+                    <h2>My Story</h2>
                     <p>With over 7 years of experience in the industry, I've had the privilege of working with clients from various sectors, helping them establish a strong online presence through thoughtful design and development.</p>
-                    
-                    <h3>My Design Philosophy</h3>
-                    <p>I believe that good design is not just about aesthetics—it's about solving problems and creating intuitive, enjoyable experiences for users. Every design decision should have a purpose and contribute to the overall goals of the project.</p>
+                    <p>My journey began with a passion for both art and technology, which naturally led me to web design. I believe that good design is not just about aesthetics—it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
                     
                     <h3>Skills & Expertise</h3>
-                    <ul>
+                    <ul style="margin-left: 20px; margin-bottom: 20px;">
                         <li>UI/UX Design</li>
                         <li>Responsive Web Design</li>
                         <li>HTML5, CSS3, JavaScript</li>
@@ -46,16 +68,44 @@
                     </ul>
                     
                     <a href="portfolio.html" class="btn">View My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Alex Morgan - Web Designer">
+                    <img src="img/suman-profile.jpg" alt="Suman Chitrakar - Web Designer">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/suman-chitrakar-b38aa0131/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/chitrakar90/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/chitrakar90/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Suman Chitrakar. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
